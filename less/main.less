@@ -1,11 +1,19 @@
 section {
+    margin: 15px 15px;
 
     .images {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        @media @desktop {
+            flex-direction: row;
+            justify-content: space-around;
+            width: 90%;
+            .center(15px);
+        }
         
         img {
-            width: 18%;
+            width: 90%;
             height: auto;
             border: 2px solid @background-color;
         }
